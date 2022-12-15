@@ -1,0 +1,47 @@
+.content{
+    height: calc(100vh - 78px);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.content::after{
+    content:' Mouses';
+    position: absolute;
+    left: 0%;
+    top: 30%;
+    font-size: 300px;
+    z-index: -5;
+    color: #72748e46;
+
+}
+
+.text{
+    font-size: 25px;
+    font-weight: bold;
+    width: 70%;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+
+    gap: 30%;
+}
+
+.producButton{
+    border: 1px solid #676eff;
+    padding: 10px;
+    border-radius: 75px;
+}
+
+.icons{
+    padding-top: 10%;
+    display: flex;
+    gap: 5%;
+}
+
+.img{
+    img{
+        height: 80vh;
+        transform: translateX(-25%) translateY(-15%);
+    }
+    height: 80%;
+}
