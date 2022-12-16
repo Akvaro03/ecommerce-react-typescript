@@ -11,10 +11,25 @@
     display: flex;
     align-items: center;
     gap: 5%;
+
+    :nth-child(1) {
+        animation: example 1s ease .5s forwards;
+      }      
+      :nth-child(2) {
+        animation: example 1s ease .7s forwards;
+      }
+      :nth-child(3) {
+        animation: example 1s ease 1s forwards;
+      }
+      :nth-child(4) {
+        animation: example 1s ease 1.3s forwards;
+      }
+                  
 }
 
 .tab{
     font-size: 12px;
+    opacity: 0;
 }
 
 .accountImage{
@@ -59,3 +74,8 @@
     border-radius: 43%;
     padding: 7px;
 }
+
+@keyframes example {
+    from {opacity: 0; transform: translateY(-105%);}
+    to {opacity: 1 ;transform:  translateY(-15%);}
+  }
