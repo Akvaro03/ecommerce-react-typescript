@@ -1,7 +1,15 @@
 import React from 'react'
 import styles from "./Header.module.scss"
 import accountImag from "../../../assets/img/accountImg.png"
+import { useCart } from '../../../context/useCartContext'
+
+import { cart } from '../../../types/types'
 const Header = () => {
+  let {name, products}:cart = useCart()
+  console.log(name)
+  console.log(products)
+
+
   return (
     <div className={styles.headerMain}>
       <div className={styles.logo}>
@@ -23,7 +31,7 @@ const Header = () => {
         </div>
         <div className="cart">
           <div className={styles.NumberCart}>
-            <span className={styles.number}>5</span>
+            <span className={styles.number}>{products}</span>
           </div>
         </div>
       </div>
