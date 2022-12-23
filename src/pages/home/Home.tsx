@@ -14,7 +14,7 @@ export default function Home() {
           <div>
           <p>Get to know the best products on the best gamer components page</p>
           </div>
-          <Button name='Products'/>
+          <Button name='Products' router='products'/>
           <div className={Style.icons}>
             <Icon name='facebook'/>
             <Icon name='twitter'/>

@@ -1,12 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Style from './Button.module.scss'
 type prop = {
-    name:string
+    name:string,
+    router:string
 }
-const Button = ({name}:prop) => {
+const Button = ({name,router}:prop) => {
   return (
     <div>
-        <span className={Style.producButton}>{name}</span>
+        <Link className={Style.producButton} to={router}>{name}</Link>
     </div>
 )
 }
